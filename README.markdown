@@ -15,11 +15,11 @@ Note: `nvm` does not support [Fish] either (see [#303](https://github.com/creati
 
 To install or update nvm, you can use the [install script][2] using cURL:
 
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+    curl -o- https://raw.githubusercontent.com/jlamendo/nvm/0.20/install.sh | bash
 
 or Wget:
 
-    wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+    wget -qO- https://raw.githubusercontent.com/jlamendo/nvm/0.20/install.sh | bash
 
 <sub>The script clones the nvm repository to `~/.nvm` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`).</sub>
 
