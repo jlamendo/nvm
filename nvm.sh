@@ -1609,7 +1609,7 @@ nvm() {
         fi
       fi
       if [ "$NVM_INSTALL_SUCCESS" != true ]; then
-        if [ "$NVM_IOJS" != true ] &&  [ "$NVM_NODE_MERGED" != true ]; then
+        if [ "$NVM_IOJS" != "alwaysfalse" ] &&  [ "$NVM_NODE_MERGED" != "alwaysfalse" ]; then
           if nvm_install_node_source "$VERSION" "$ADDITIONAL_PARAMETERS"; then
             NVM_INSTALL_SUCCESS=true
           fi
