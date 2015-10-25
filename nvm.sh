@@ -1233,9 +1233,9 @@ nvm_install_node_source() {
     command tar -xzf "$tmptarball" -C "$tmpdir" && \
     cd "$tmpdir/node-$VERSION" && \
     ./configure --prefix="$VERSION_PATH" $ADDITIONAL_PARAMETERS && \
-    $make $MAKE_CXX && \
+    $make i18nsupport=off $MAKE_CXX && \
     command rm -f "$VERSION_PATH" 2>/dev/null && \
-    $make $MAKE_CXX install
+    $make i18nsupport=off $MAKE_CXX install
     )
   then
     if ! nvm_has "npm" ; then
